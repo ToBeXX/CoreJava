@@ -208,3 +208,55 @@ class TestAnim{
 		d.eat();
 	}
 }
+/*
+第8题
+优点：能够在基础的类之上进行修改和扩充，灵活有效
+使用  子类名 extends 父类名    实现继承
+*/
+//第9题
+/*
+不能 因为继承只能继承父类的属性和方法  不能继承构造器
+*/
+//第10题
+/*
+重载是在一个类中 如果一个类中声明声明多个方法名一样 返回值类型参数表不同的方法就称为重载
+覆盖是在父类与子类之间，如果子类中有一个方法的方法名返回值类型参数表都一样的话就称之为覆盖。
+*/
+//第11题
+/*
+菱形问题
+说明了在java中为什么没有多继承
+*/
+//第12题
+
+class A{
+	public void m(){
+		System.out.println("父类m（）");
+	}
+}
+/* class B extends A{
+	public int m(){
+		return 10;
+	}
+}
+class C extends A{
+	public void m(int a){}
+}
+class D extends A{
+	public void m2(){}
+} */
+class Ee extends A{
+	void m(){
+		System.out.println("子类m（）");
+	}
+}
+class TestClass{
+	public static void main(String[] args){
+		Ee e = new Ee();
+		e.m();
+	}
+}
+/*
+都不满足
+满足要求是：返回值类型 方法名 参数表都相同  访问修饰符相同或更宽才能够实现方法覆盖
+*/
