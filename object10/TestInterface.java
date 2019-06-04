@@ -74,3 +74,22 @@ class TestInterface1{
 		light.lightOn();
 	}
 }
+
+
+
+//Static 
+class TestStatic{
+	public static void main(String[] args){
+		System.out.println(Static.age);
+		System.out.println(Static.a(3));
+	}	
+}
+class Static{
+	static int age = 10;
+	static String name = "xiaoya";
+	double salary = 3000.0; 
+	public static int a(int ab){
+		System.out.println("我是女生。漂亮的女生");
+		return age;
+	}
+}

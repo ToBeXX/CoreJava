@@ -542,7 +542,7 @@ class SalarieEmployee extends Employee{
 		this.monthSalary = monthSalary;
 	}
 	public double getSalary(int month){
-		if(super.getMonth() == month){
+		if(getMonth() == month){
 			return monthSalary+super.getSalary(month);
 		}
 		else return monthSalary;
@@ -600,7 +600,7 @@ class BasePlusSalesEmployee extends SalesEmployee{
 class TestSalary{
 	public static void main(String[] args){
 		BasePlusSalesEmployee base = new BasePlusSalesEmployee("Âí¹¢Ðñ",5,3000.0,0.1,5000.0);
-		System.out.println(base.getSalary(6));
+		System.out.println(base.getSalary(5));
 		SalarieEmployee salaried = new SalarieEmployee("mgx",7,4000);
 		System.out.println(salaried.getSalary(7));
 	}
