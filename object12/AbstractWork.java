@@ -482,10 +482,10 @@ class F{
 	}
 }
 class EE extends F{
-	int a(String n){
+	public int a(int n){
 		return 0;
 	}
-	/* public double a(){
+	private double a(){
 		return 0.0;
-	} */
+	}
 }
